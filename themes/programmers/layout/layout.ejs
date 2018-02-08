@@ -5,7 +5,7 @@
         <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
       </div>
       <div class="mdl-cell mdl-cell--8-col main-container">
-        <% if (url_for(page.path) == '/index.html'){ %>
+        <% if (is_home()){ %>
           <div class="mdl-grid mdl-grid--nesting">
             <%- partial('_partial/course-card') %>
           </div>
