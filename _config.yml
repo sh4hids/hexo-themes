@@ -78,4 +78,6 @@ theme: programmers
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/sh4hids/hexo-themes.git
+  message: "Blog updated..."
