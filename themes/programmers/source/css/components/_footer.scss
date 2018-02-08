@@ -1,0 +1,10 @@
+#footer {
+  p {
+    margin: 0;
+    position: relative;
+    .powered-by {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

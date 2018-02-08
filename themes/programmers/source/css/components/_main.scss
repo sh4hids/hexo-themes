@@ -1,0 +1,36 @@
+.main-container {
+  .card {
+    padding: 16px;
+    background: $primary-color-light;
+  }
+  .mdl-grid.mdl-grid--nesting {
+    //padding: 0;
+    margin: 0 -8px;
+    margin-bottom: 16px;
+  }
+
+  .course-card {
+    height: 200px;
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      p {
+        margin: 0;
+        i {
+          font-size: 7rem;
+        }
+      }
+      p.course-title {
+        font-weight: 500;
+        margin-top: 8px;
+        font-size: 1.4rem;
+        color: $primary-color-dark;
+      }
+    }
+  }
+
+}

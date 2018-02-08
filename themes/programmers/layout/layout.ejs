@@ -1,0 +1,29 @@
+<%- partial('_partial/head') %>
+  <body>
+    <div class="mdl-grid main-wrapper">
+      <div class="mdl-cell mdl-cell--3-col">
+        <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+      </div>
+      <div class="mdl-cell mdl-cell--8-col main-container">
+        <% if (url_for(page.path) == '/index.html'){ %>
+          <div class="mdl-grid mdl-grid--nesting">
+            <%- partial('_partial/course-card') %>
+          </div>
+        <% } %>
+        <div class="mdl-grid mdl-grid--nesting">
+          <div class="mdl-cell mdl-cell--12-col mdl-shadow--2dp card">
+            <%- body %>
+          </div>
+        </div>
+        <div class="mdl-grid mdl-grid--nesting">
+          <div class="mdl-cell mdl-cell--12-col card">
+            <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-layout-spacer"></div>
+      <%- partial('_partial/after-footer') %>
+    </div>
+  </body>
+
+  </html>
