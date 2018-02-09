@@ -6,12 +6,6 @@
 
 body {
   font-family: $primary-font-bn, $primary-font-en, sans-serif;
-  background-color: $primary-color-dark;
-  background: url('img/bg.dark.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
   font-size: 16px;
   p {
     font-size: 16px;
@@ -35,6 +29,13 @@ h5 { font-size: 1.2rem }
 h6 { font-size: 1rem; }
 
 .main-wrapper {
-  margin-top: 100px;
+  padding-top: 100px;
   position: relative;
+  min-height: 100vh;
+  background-color: $primary-color-dark;
+  background: url('img/bg.dark.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
