@@ -8,7 +8,7 @@ subtitle: শিখতে চাই, তাই শেখাই :)
 description:
 author: প্রযুক্তি স্কুল
 language:
-- bd-BN
+- bn
 timezone:
 
 # URL
@@ -21,7 +21,7 @@ permalink_defaults:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: tags
+tag_dir: courses
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
