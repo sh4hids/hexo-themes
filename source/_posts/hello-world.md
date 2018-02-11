@@ -22,17 +22,15 @@ More info: [Writing](https://hexo.io/docs/writing.html)
 
 ### Run server
 
-``` bash
-$ hexo server
-```
+<pre><code class="language-bash">$ hexo server</code></pre>
+
+<pre><code class="language-css">p { color: red }</code></pre>
 
 More info: [Server](https://hexo.io/docs/server.html)
 
 ### Generate static files
 
-``` bash
-$ hexo generate
-```
+
 
 More info: [Generating](https://hexo.io/docs/generating.html)
 

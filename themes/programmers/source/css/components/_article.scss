@@ -24,26 +24,5 @@
   }
 }
 
-.article-home {
-  .mdl-grid.mdl-grid--nesting {
-    margin-bottom: 0;
-  }
-  .article-header {
-    h1 {
-      margin: 0;
-      padding: 0;
-      margin-bottom: 8px;
-      padding-bottom: 8px;
-      font-size: 1.6rem;
-      border-bottom: 1px solid rgba($primary-color-highlight, 0.2);
-    }
-  }
-  .article-meta {
-    font-size: 1rem;
-    .material-icons {
-      font-size: 1.4rem;
-      color: rgba($primary-color-dark, 0.7);
-      margin-right: 4px;
-    }
-  }
-}
+@import "_home-posts";
+@import "_blog-posts";

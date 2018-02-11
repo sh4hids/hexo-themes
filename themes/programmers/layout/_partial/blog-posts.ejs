@@ -1,18 +1,23 @@
-<article id="<%= post.layout %>-<%= post.slug %>" class="article card" itemscope itemprop="blogPost">
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-blog card" itemscope itemprop="blogPost">
   <div class="article-header">
     <%- partial('post/gallery') %>
     <% if (post.link || post.title){ %>
-      <header class="article-header">
         <%- partial('post/title', {class_name: 'article-title'}) %>
-      </header>
     <% } %>
   </div>
-  <div class="article-meta">
-    <span class="published-date">
-      <i class="material-icons">date_range</i>
+  <div class="mdl-grid mdl-grid--nesting article-meta">
+    <div class="mdl-cell--3-col">
+      <%- partial('post/author', {class_name: 'author-name' }) %>
+    </div>
+    <div class="mdl-cell--3-col">
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    </span>
-    <%- partial('post/category') %>
+    </div>
+    <div class="mdl-cell--3-col">
+      <%- partial('post/category') %>
+    </div>
+    <div class="mdl-cell--3-col">
+      <%- partial('post/reading-time') %>
+    </div>
   </div>
   <div class="article-inner">
 
