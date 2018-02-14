@@ -3,10 +3,11 @@
     .published-date,
     .post-author,
     .article-category,
-    .reading-time {
+    .reading-time, .pageviews {
       a, span {
         position: relative;
         top: -4px;
+        color: $primary-color-highlight;
       }
     }
     .reading-time {
