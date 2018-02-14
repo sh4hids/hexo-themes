@@ -1,39 +1,56 @@
 header {
-  padding-right: 32px;
   #header-outer {
     position: fixed;
     height: 100%;
     width: 300px;
     text-align: right;
     padding-top: 16px;
-    #logo-wrap, #subtitle-wrap {
-      margin: 0 0 8px 0;
+
+    #logo-wrap,
+    #subtitle-wrap {
+      margin: 0 0 8px;
     }
+
     #subtitle-wrap {
       color: $primary-color-light;
       margin-bottom: 16px;
+
       span {
         padding: 0 0 8px 16px;
         border-bottom: 2px dashed rgba($primary-color-highlight, 0.3);
       }
     }
+
     #header-inner {
-      #main-nav {
-        margin-bottom: 16px;
-        ul {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-          li {
+      .mdl-layout__drawer {
+        background: none;
+        border-right: none;
+        box-shadow: none;
+
+        .mdl-layout-title {
+          padding-left: 0;
+
+          #subtitle-wrap {
+            font-size: 1.4rem;
+          }
+        }
+
+        .mdl-navigation {
+          padding-top: 0;
+
+          .mdl-navigation__link {
+            font-size: 1.2rem;
+            padding: 8px 0;
             margin-bottom: 8px;
-            &:last-child {
-              margin-bottom: 0;
+            color: $primary-color-highlight;
+
+            &:hover {
+              background: none;
             }
-            a {
-              font-size: 1.2rem;
-              padding-bottom: 4px;
-              border-bottom: 1px dashed rgba($primary-color-highlight, 0.2);
-              padding-left: 16px;
+
+            span {
+              border-bottom: 2px dashed rgba($primary-color-highlight, 0.1);
+              padding-left: 32px;
             }
           }
         }

@@ -34,11 +34,20 @@
       <% } %>
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <div class="mdl-grid mdl-grid--nesting article-meta">
+        <div class="mdl-cell--3-col">
+          <%- partial('post/author', {class_name: 'author-name' }) %>
+        </div>
+        <div class="mdl-cell--3-col">
+          <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+        </div>
+        <div class="mdl-cell--3-col">
+          <%- partial('post/category') %>
+        </div>
+        <div class="mdl-cell--3-col">
+          <%- partial('post/reading-time') %>
+        </div>
+      </div>
     </footer>
   </div>
   <% if (!index){ %>
