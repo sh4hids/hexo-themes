@@ -80,5 +80,4 @@ theme: programmers
 deploy:
   type: git
   repo: https://github.com/sh4hids/hexo-themes.git
-  branch: gh-pages
   message: "Blog updated..."
