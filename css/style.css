@@ -1,0 +1,176 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosansbengali.css);
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Noto Sans Bengali", "Roboto", sans-serif;
+  font-size: 16px; }
+  body p {
+    font-size: 16px; }
+
+* a, a {
+  color: #7cb342;
+  text-decoration: none; }
+
+/*
+=headerFontSize
+ */
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.8rem; }
+
+h3 {
+  font-size: 1.6rem; }
+
+h4 {
+  font-size: 1.4rem; }
+
+h5 {
+  font-size: 1.2rem; }
+
+h6 {
+  font-size: 1rem; }
+
+.mdl-layout--fixed-drawer {
+  min-height: 100vh;
+  background-color: #1B2B34;
+  background: url("img/bg.dark.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.mdl-layout__drawer {
+  background: none;
+  border-right: none;
+  box-shadow: none;
+  text-align: right;
+  padding-top: 130px; }
+  .mdl-layout__drawer .mdl-layout-title {
+    padding-left: 0; }
+    .mdl-layout__drawer .mdl-layout-title #logo-wrap {
+      margin: 0;
+      margin-bottom: 8px; }
+    .mdl-layout__drawer .mdl-layout-title #subtitle-wrap {
+      font-size: 1.4rem;
+      color: #fafafa;
+      margin: 0;
+      margin-bottom: 16px; }
+  .mdl-layout__drawer .mdl-navigation {
+    padding-top: 0; }
+    .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+      font-size: 1.2rem;
+      padding: 8px 0;
+      margin-bottom: 4px;
+      color: #7cb342; }
+      .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+        background: none; }
+      .mdl-layout__drawer .mdl-navigation .mdl-navigation__link span {
+        border-bottom: 2px dashed rgba(124, 179, 66, 0.1);
+        padding-bottom: 4px;
+        padding-left: 32px; }
+
+@media all and (min-width: 0) and (max-width: 1024px) and (orientation: landscape) {
+  .mdl-layout__drawer {
+    background: rgba(27, 43, 52, 0.9);
+    padding-right: 24px; } }
+
+.mdl-layout__content {
+  padding-top: 100px; }
+
+.main-container .card {
+  padding: 16px;
+  background: #fafafa; }
+
+.main-container .mdl-grid.mdl-grid--nesting {
+  margin: 0 -8px;
+  margin-bottom: 16px; }
+
+.main-container .course-card {
+  height: 200px; }
+  .main-container .course-card a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .main-container .course-card a p {
+      margin: 0; }
+      .main-container .course-card a p i {
+        font-size: 7rem; }
+    .main-container .course-card a p.course-title {
+      font-weight: 500;
+      margin-top: 8px;
+      font-size: 1.4rem;
+      color: #1B2B34; }
+
+.main-container .article .article-meta .published-date a, .main-container .article .article-meta .published-date span,
+.main-container .article .article-meta .post-author a,
+.main-container .article .article-meta .post-author span,
+.main-container .article .article-meta .article-category a,
+.main-container .article .article-meta .article-category span,
+.main-container .article .article-meta .reading-time a,
+.main-container .article .article-meta .reading-time span, .main-container .article .article-meta .pageviews a, .main-container .article .article-meta .pageviews span {
+  position: relative;
+  top: -4px;
+  color: #7cb342; }
+
+.main-container .article .article-meta .reading-time span {
+  color: #7cb342; }
+
+.main-container .article.card {
+  margin-bottom: 16px; }
+  .main-container .article.card:last-child {
+    margin-bottom: 0; }
+
+.main-container .article.article-home .mdl-grid.mdl-grid--nesting {
+  margin-bottom: 0; }
+
+.main-container .article.article-home .article-header h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  font-size: 1.6rem;
+  border-bottom: 1px solid rgba(124, 179, 66, 0.2); }
+
+.main-container .article.article-home .article-meta {
+  font-size: 1rem;
+  padding-bottom: 0; }
+  .main-container .article.article-home .article-meta .material-icons {
+    font-size: 1.4rem;
+    color: rgba(27, 43, 52, 0.5);
+    margin-right: 4px; }
+
+.main-container .article.article-blog .article-header h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  font-size: 1.6rem; }
+
+.main-container .article.article-blog .article-meta {
+  font-size: 1rem;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(124, 179, 66, 0.1);
+  border-top: 1px solid rgba(124, 179, 66, 0.1); }
+  .main-container .article.article-blog .article-meta .material-icons {
+    font-size: 1.4rem;
+    color: rgba(27, 43, 52, 0.5);
+    margin-right: 4px; }
+
+.main-container .article.article-blog pre code {
+  font-family: "Fira Mono", monospace; }
+
+#footer p {
+  margin: 0;
+  position: relative; }
+  #footer p .powered-by {
+    position: absolute;
+    right: 0; }
