@@ -1,22 +1,30 @@
 <% if (post.prev || post.next){ %>
 <nav id="article-nav">
+  <div class="mdl-grid mdl-grid--nesting article-nav">
+  <% if (post.next){ %>
+    <div class="mdl-cell--6-col">
+    <a href="<%- url_for(post.next.path) %>" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"><i class="material-icons">arrow_back</i> <span> <%= post.next.title %> </span></div>
+    </a>
+    </div>
+  <% } %>
+
   <% if (post.prev){ %>
+    <div class="mdl-cell--6-col">
     <a href="<%- url_for(post.prev.path) %>" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><%= __('newer') %></strong>
       <div class="article-nav-title">
+        <span>
         <% if (post.prev.title){ %>
           <%= post.prev.title %>
         <% } else { %>
           (no title)
         <% } %>
+        </span>
+        <i class="material-icons">arrow_forward</i>
       </div>
     </a>
+    </div>
   <% } %>
-  <% if (post.next){ %>
-    <a href="<%- url_for(post.next.path) %>" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><%= __('older') %></strong>
-      <div class="article-nav-title"><%= post.next.title %></div>
-    </a>
-  <% } %>
+  </div>
 </nav>
 <% } %>

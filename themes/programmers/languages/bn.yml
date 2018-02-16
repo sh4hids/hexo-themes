@@ -10,8 +10,8 @@ archive_a: সংগ্রহশালা
 archive_b: "সংগ্রহশালা: %s"
 page: পাতা %d
 recent_posts: সাম্প্রতিক লেখা
-newer: নতুন
-older: পুরাতন
+newer: পরবর্তী
+older: পূর্ববর্তী
 share: Share
 powered_by: Powered by
 rss_feed: RSS Feed

@@ -165,8 +165,10 @@ h6 {
     color: rgba(27, 43, 52, 0.5);
     margin-right: 4px; }
 
-.main-container .article.article-blog pre code {
-  font-family: "Fira Mono", monospace; }
+.main-container .article.article-blog pre {
+  border-radius: 3px; }
+  .main-container .article.article-blog pre code {
+    font-family: "Fira Mono", monospace; }
 
 #footer p {
   margin: 0;
