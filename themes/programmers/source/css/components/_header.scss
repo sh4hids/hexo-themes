@@ -1,60 +1,49 @@
-header {
-  #header-outer {
-    position: fixed;
-    height: 100%;
-    width: 300px;
-    text-align: right;
-    padding-top: 16px;
+.mdl-layout__drawer {
+  background: none;
+  border-right: none;
+  box-shadow: none;
+  text-align: right;
+  padding-top: 130px;
 
-    #logo-wrap,
-    #subtitle-wrap {
-      margin: 0 0 8px;
+  .mdl-layout-title {
+    padding-left: 0;
+    #logo-wrap {
+      margin: 0;
+      margin-bottom: 8px;
     }
-
     #subtitle-wrap {
+      font-size: 1.4rem;
       color: $primary-color-light;
+      margin: 0;
       margin-bottom: 16px;
+    }
+  }
+
+  .mdl-navigation {
+    padding-top: 0;
+
+    .mdl-navigation__link {
+      font-size: 1.2rem;
+      padding: 8px 0;
+      margin-bottom: 4px;
+      color: $primary-color-highlight;
+
+      &:hover {
+        background: none;
+      }
 
       span {
-        padding: 0 0 8px 16px;
-        border-bottom: 2px dashed rgba($primary-color-highlight, 0.3);
-      }
-    }
-
-    #header-inner {
-      .mdl-layout__drawer {
-        background: none;
-        border-right: none;
-        box-shadow: none;
-
-        .mdl-layout-title {
-          padding-left: 0;
-
-          #subtitle-wrap {
-            font-size: 1.4rem;
-          }
-        }
-
-        .mdl-navigation {
-          padding-top: 0;
-
-          .mdl-navigation__link {
-            font-size: 1.2rem;
-            padding: 8px 0;
-            margin-bottom: 8px;
-            color: $primary-color-highlight;
-
-            &:hover {
-              background: none;
-            }
-
-            span {
-              border-bottom: 2px dashed rgba($primary-color-highlight, 0.1);
-              padding-left: 32px;
-            }
-          }
-        }
+        border-bottom: 2px dashed rgba($primary-color-highlight, 0.1);
+        padding-bottom: 4px;
+        padding-left: 32px;
       }
     }
   }
 }
+
+ @media all and (min-width: 0) and (max-width: 1024px) and (orientation: landscape) {
+   .mdl-layout__drawer {
+     background: rgba($primary-color-dark, 0.9);
+     padding-right: 24px;
+   }
+ }

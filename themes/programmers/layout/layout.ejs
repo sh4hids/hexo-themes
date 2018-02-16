@@ -1,29 +1,33 @@
 <%- partial('_partial/head') %>
   <body>
-    <div class="mdl-grid main-wrapper">
-      <div class="mdl-cell mdl-cell--3-col">
-        <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      </div>
-      <div class="mdl-cell mdl-cell--8-col main-container">
-        <% if (is_home()){ %>
-          <div class="mdl-grid mdl-grid--nesting">
-            <%- partial('_partial/course-card') %>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+      <main class="mdl-layout__content">
+        <div class="mdl-grid main-wrapper">
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-cell mdl-cell--10-col main-container">
+            <% if (is_home()){ %>
+              <div class="mdl-grid mdl-grid--nesting">
+                <%- partial('_partial/course-card') %>
+              </div>
+            <% } %>
+            <div class="mdl-grid mdl-grid--nesting">
+              <div class="mdl-cell mdl-cell--12-col">
+                <%- body %>
+              </div>
+            </div>
+            <div class="mdl-grid mdl-grid--nesting">
+              <div class="mdl-cell mdl-cell--12-col mdl-shadow--2dp card">
+                <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+              </div>
+            </div>
           </div>
-        <% } %>
-        <div class="mdl-grid mdl-grid--nesting">
-          <div class="mdl-cell mdl-cell--12-col">
-            <%- body %>
-          </div>
+          <div class="mdl-layout-spacer"></div>
+          <%- partial('_partial/after-footer') %>
         </div>
-        <div class="mdl-grid mdl-grid--nesting">
-          <div class="mdl-cell mdl-cell--12-col mdl-shadow--2dp card">
-            <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-          </div>
-        </div>
-      </div>
-      <div class="mdl-layout-spacer"></div>
-      <%- partial('_partial/after-footer') %>
+      </main>
     </div>
+
   </body>
 
   </html>

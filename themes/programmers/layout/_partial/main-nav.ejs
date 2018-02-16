@@ -1,21 +1,19 @@
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">
-      <h1 id="logo-wrap">
-        <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
-      </h1>
-      <% if (theme.subtitle){ %>
-        <h3 id="subtitle-wrap">
-          <span><%= theme.subtitle %></span>
-        </h3>
-      <% } %>
-    </span>
-    <nav class="mdl-navigation">
-      <% for (var i in theme.menu){ %>
-        <a class="mdl-navigation__link" href="<%- url_for(theme.menu[i]) %>">
-          <span><%= i %></span>
-        </a>
-      <% } %>
-    </nav>
-  </div>
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout-title">
+    <h1 id="logo-wrap">
+      <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
+    </h1>
+    <% if (theme.subtitle){ %>
+      <h3 id="subtitle-wrap">
+        <span><%= theme.subtitle %></span>
+      </h3>
+    <% } %>
+  </span>
+  <nav class="mdl-navigation">
+    <% for (var i in theme.menu){ %>
+      <a class="mdl-navigation__link" href="<%- url_for(theme.menu[i]) %>">
+        <span><%= i %></span>
+      </a>
+    <% } %>
+  </nav>
 </div>
