@@ -170,6 +170,13 @@ h6 {
   .main-container .article.article-blog pre code {
     font-family: "Fira Mono", monospace; }
 
+.main-container .article.article-blog .article-nav {
+  margin-bottom: 0;
+  text-align: center; }
+  .main-container .article.article-blog .article-nav .article-nav-title span {
+    position: relative;
+    top: -6px; }
+
 #footer p {
   margin: 0;
   position: relative; }
