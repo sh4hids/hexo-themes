@@ -4,7 +4,7 @@
   <% if (post.next){ %>
     <div class="mdl-cell--6-col">
     <a href="<%- url_for(post.next.path) %>" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"><i class="material-icons">arrow_back</i> <span> <%= post.next.title %> </span></div>
+      <div class="article-nav-title post-prev"><i class="material-icons">arrow_back</i> <span> <%= post.next.title %> </span></div>
     </a>
     </div>
   <% } %>
@@ -12,7 +12,7 @@
   <% if (post.prev){ %>
     <div class="mdl-cell--6-col">
     <a href="<%- url_for(post.prev.path) %>" id="article-nav-newer" class="article-nav-link-wrap">
-      <div class="article-nav-title">
+      <div class="article-nav-title post-next">
         <span>
         <% if (post.prev.title){ %>
           <%= post.prev.title %>

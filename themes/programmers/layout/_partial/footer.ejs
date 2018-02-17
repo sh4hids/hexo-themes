@@ -1,10 +1,10 @@
 <footer id="footer">
   <p>
     <span>
-      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+      &copy; <%= date(new Date(), 'YYYY') %> <a href="<%= config.url %>"><%= config.title %></a>
     </span>
     <span class="powered-by">
-      <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
+      <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://bdtechies.com">bdTechies</a>
     </span>
   </p>
 </footer>
